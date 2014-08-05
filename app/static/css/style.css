@@ -1,17 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
 *{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 11px;
 }
 
 table{
   padding: 0px;
   border-spacing: 0px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   width: 100%;
   border: 1px solid #aaaaaa;
-  font-size: 11px;
+  font-size: 20px;
 }
 
 table thead{
