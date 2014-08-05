@@ -1,24 +1,12 @@
-doctype html
-html
-  head
-    meta(charset='utf-8')
-    title eCommerce
-    link(rel='stylesheet', href='/css/style.css')
-  body
-    h1 eCommerce
-    nav
-      ul
-        li: a(href='/') Home
-        li: a(href='/about') About
-        li: a(href='/faq') Faq
-        li: a(href='/items') Items
-        li: a(href='/items/new') New Item
-
+extends ../shared/template
+block content
+  h2 Items
     h2= item.name
 
     #item(style='background-color:#{item.color};')
       #nuke
-        form(method='post', action='/items/#{item._id}/delete')
+        form(method='post', action='/items/#{item._id}')
+          input(type='hidden', name='_method', value='delete')
           button Delete #{item.name}
       #dimensions
         span l #{item.dimensions.l}in/
